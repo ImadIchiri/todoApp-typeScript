@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todos |TypeScript Project</title>
+    <!-- Google Fonts {Cairo} -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome V-{6.2.1} -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <h1 class="quote">
+        There are dreamers and there are planners <br />
+        The planners make their dreams come true.
+      </h1>
+      <div class="container" id="container">
+        <form onsubmit="return false">
+          <label for="todo_input">Add New Todo:</label>
+          <input type="text" id="todo_input" placeholder="Taks Title" />
+          <i class="fa-solid fa-plus add_btn" id="add_btn"></i>
+        </form>
+        <div class="todos_list" id="todos_list">
+          <!-- <div class="todo">
+          <h3 class="title">My Task</h3>
+          <div class="actions">
+            <i class="fa-solid fa-trash" id="delete_icon"></i>
+            <i class="fa-solid fa-check" id="done_icon"></i>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="dist/functionBased.js"></script>
+  </body>
+</html>
