@@ -35,7 +35,7 @@ const createNewTaskInfos = () => {
 
   tasksList.push({ taskId, taskTitle, isDone });
   AddToLocalStorage();
-  todoList.prepend(createNewTask({ taskId, taskTitle, isDone }));
+  todoList.append(createNewTask({ taskId, taskTitle, isDone }));
 };
 
 function createNewTask(task: taskInterface, index?: number) {
@@ -91,9 +91,9 @@ const doneTask = (id: number) => {
 
 function rebuildTodos() {
   todoList.innerHTML = "";
-  tasksList
-    .reverse()
-    .forEach((item, index) => todoList.append(createNewTask(item, index)));
+  tasksList.forEach((item, index) =>
+    todoList.append(createNewTask(item, index))
+  );
 }
 
 const AddToLocalStorage = () => {
